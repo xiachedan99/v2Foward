@@ -28,9 +28,10 @@ sed -i "s|Nat_port|${listen_port}|" $file
 sed -i "s|Ld_ipadress|${into_address}|" $file
 sed -i "s|Ld_port|${into_port}|" $file
 
+echo -e "\033[32m 安装完成 \033[0m"
+
 #system 
 systemctl enable v2ray
 systemctl start v2ray
 service v2ray restart
 service v2ray status
-echo -e "\033[32m 安装完成 \033[0m"
