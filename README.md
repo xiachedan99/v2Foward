@@ -1,2 +1,10 @@
 # 一键安装
-bash <(curl -Ls https://raw.githubusercontent.com/xiachedan99/v2Foward/main/install.sh)
+
+<pre>
+<code class="language-bash">
+bash &lt;(curl -Ls https://raw.githubusercontent.com/xiachedan99/v2Foward/main/install.sh)
+</code>
+</pre>
+
+<button class="btn" data-clipboard-target="#copy-command">
+
