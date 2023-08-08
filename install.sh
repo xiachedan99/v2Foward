@@ -15,7 +15,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 
 #Config info
 cd /usr/local/etc/v2ray && rm -rf config.json
-wget https://raw.githubusercontent.com/xiachedan99/v2Foward/main/config.json
+wget https://raw.githubusercontent.com/xiachedan99/v2Foward/main/v2ray_config.json
 
 #setting config
 read -p "请输入监听端口：" listen_port
