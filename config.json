@@ -1,12 +1,12 @@
 {
     "inbounds": [
         {
-            "port": Nat_port, 
+            "port": Nat_port,
             "listen": "0.0.0.0",
             "protocol": "dokodemo-door",
             "settings": {
-                "address": "Ld_ipadress", 
-                "port": Ld_port, 
+                "address": "Ld_ipadress",
+                "port": Ld_port,
                 "network": "tcp,udp"
             },
             "tag": "",
@@ -18,5 +18,5 @@
                 ]
             }
         }
-      }
-#如果要批量转发，复制以上代码，最后一行 } 不要复制，并在倒数第二个 } 后面加英文逗号，粘贴代码。转发几个IP就复制几次代码。
+    ]
+}
