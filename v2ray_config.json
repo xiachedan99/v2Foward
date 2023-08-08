@@ -1,12 +1,12 @@
 {
     "inbounds": [
         {
-            "port": 监听端口, 
+            "port": Nat_port, 
             "listen": "0.0.0.0",
             "protocol": "dokodemo-door",
             "settings": {
-                "address": "落地IP", 
-                "port": 落地端口, 
+                "address": "Ld_ipadress", 
+                "port": Ld_port, 
                 "network": "tcp,udp"
             },
             "tag": "",
