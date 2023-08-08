@@ -19,10 +19,9 @@ cd /usr/local/etc/v2ray && rm -rf config.json
 wget https://raw.githubusercontent.com/xiachedan99/v2Foward/main/config.json
 
 #setting config
-# "${green}开始安装${plain}"
-read -p "${green}请输入监听端口：${plain}" listen_port
-read -p "请输入被转发端口：" into_port
-read -p "请输入被转发IP：" into_address
+read -p $'\e[32m请输入监听端口：\e[0m' listen_port
+read -p $'\e[32m请输入被转发端口：\e[0m' into_port
+read -p $'\e[32m请输入被转发IP：\e[0m' into_address
 
 #written config
 
