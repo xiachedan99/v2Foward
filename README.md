@@ -1,3 +1,4 @@
+v2ray内核的一键转发
 # 一键安装
 <pre>
 <code class="language-bash">bash &lt;(curl -Ls https://raw.githubusercontent.com/xiachedan99/v2Foward/main/install.sh)</code>
