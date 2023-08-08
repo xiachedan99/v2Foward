@@ -37,8 +37,8 @@ service v2ray status
 echo -e "\033[32m 安装完成 \033[0m"
 echo -e ""
 echo -e " 重启v2ray转发： service v2ray restart
-echo -e " 查看v2ray转发： service v2ray status
+echo -e " 重启v2ray转发： service v2ray status
 echo -e " 移除v2ray请运行： bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove"
 echo -e ""
-echo -e " 配置多用户转发，请至 ${green}/usr/local/etc/v2ray${plain} 修改config.json配置文件"
+echo -e " 配置多用户转发，请至${green} /usr/local/etc/v2ray${plain} 修改config.json配置文件"
 echo -e ""
