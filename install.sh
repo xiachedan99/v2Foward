@@ -19,12 +19,10 @@ cd /usr/local/etc/v2ray && rm -rf config.json
 wget https://raw.githubusercontent.com/xiachedan99/v2Foward/main/config.json
 
 #setting config
-echo -e "\033[32m请输入监听端口：\033[0m"
-read listen_port
-echo -e "\033[32m请输入被转发端口（落地机端口）：\033[0m"
-read into_port
-echo -e "\033[32m请输入被转发IP（落地机IP）：\033[0m"
-read into_address
+# 设置配置
+read -p $'\033[32m请输入监听端口：\033[0m' listen_port
+read -p $'\033[32m请输入被转发端口：\033[0m' into_port
+read -p $'\033[32m请输入被转发IP：\033[0m' into_address
 
 #written config
 file="/usr/local/etc/v2ray/config.json"
