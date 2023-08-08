@@ -1,9 +1,9 @@
 #!/bin/bash
-##############################################################
-#
-#         V2rayForward v1.0                                  #
-#                                                            #
-##############################################################
+#####################################
+#                                   #                 
+#         V2rayForward v1.0         #
+#                                   #
+#####################################
 
 #install base
 rpm -q curl || yum install -y curl
@@ -15,12 +15,12 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 
 #Config info
 cd /usr/local/etc/v2ray && rm -rf config.json
-wget https://raw.githubusercontent.com/siemenstutorials/v2foward/master/config.json
+wget https://raw.githubusercontent.com/xiachedan99/v2Foward/main/config.json
 
 #setting config
 read -p "请输入监听端口：" listen_port
-read -p "请输入被转发端口：" into_port
-read -p "请输入被转发IP：" into_address
+read -p "请输入被转发端口（落地机端口）：" into_port
+read -p "请输入被转发IP（落地机IP）：" into_address
 
 #written config
 file="/usr/local/etc/v2ray/config.json"
