@@ -35,8 +35,10 @@ systemctl start v2ray
 service v2ray restart
 service v2ray status
 echo -e "\033[32m 安装完成 \033[0m"
+echo -e ""
 echo -e " 重启v2ray：\033[32m service v2ray restart \033[0m"
 echo -e " 查看v2ray：\033[32m service v2ray status \033[0m"
 echo -e " 移除v2ray请运行：\033[32m bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove \033[0m"
+echo -e ""
 echo -e "${green}配置多用户转发，请至 /usr/local/etc/v2ray/config.json 修改配置文件${plain}"
 echo -e ""
