@@ -1,12 +1,12 @@
 {
     "inbounds": [
         {
-            "port": Nat_port,
+            "port": Nat_port, 
             "listen": "0.0.0.0",
             "protocol": "dokodemo-door",
             "settings": {
-                "address": "Ld_ipadress",
-                "port": Ld_port,
+                "address": "Ld_ipadress", 
+                "port": Ld_port, 
                 "network": "tcp,udp"
             },
             "tag": "",
@@ -18,5 +18,27 @@
                 ]
             }
         }
-    ]
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {}
+        },
+        {
+            "protocol": "blackhole",
+            "settings": {},
+            "tag": "blocked"
+        }
+    ],
+    "routing": {
+        "rules": [
+            {
+                "type": "field",
+                "ip": [
+                    "geoip:private"
+                ],
+                "outboundTag": "blocked"
+            }
+        ]
+    }
 }
